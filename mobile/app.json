@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "WeatherGPT",
+    "slug": "weathergpt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0a2e"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a2e"
+      },
+      "permissions": ["RECORD_AUDIO"]
+    }
+  }
+}
