@@ -4,19 +4,26 @@
     "slug": "weathergpt",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "backgroundColor": "#0a0a2e"
-    },
     "ios": {
       "supportsTablet": false
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#0a0a2e"
-      },
-      "permissions": ["RECORD_AUDIO"]
-    }
+      "permissions": [
+        "RECORD_AUDIO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Allow WeatherGPT to access your microphone for spoken farm weather advisories.",
+          "recordAudioAndroid": true
+        }
+      ]
+    ]
   }
 }
